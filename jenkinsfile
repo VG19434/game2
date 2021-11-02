@@ -10,8 +10,7 @@ pipeline {
         stage('git clone') {
           steps {
            sh '''
-           sudo git init
-           sudo git clone https://github.com/VG19434/game2.git
+            git clone https://github.com/VG19434/game2.git
            '''
           }
         }
