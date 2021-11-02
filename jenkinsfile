@@ -9,9 +9,7 @@ pipeline {
     stages {
         stage('git clone') {
           steps {
-           sh '''
-            git clone https://github.com/VG19434/game2.git
-           '''
+            git 'https://github.com/VG19434/game2.git'
           }
         }
         stage('Compile and Build') {
